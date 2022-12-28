@@ -113,19 +113,6 @@ alias serve="artisan serve"
 alias c="composer"
 alias vim="nvim"
 
-# Native Script
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Add rubygems to the path
-export PATH=$PATH:/opt/homebrew/lib/ruby/gems/2.7.0/bin:$PATH
-# or
-export PATH=$PATH:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
-
-
-# Flutter
-export PATH=$PATH:/Users/lukebouch/Utilities/flutter/bin
-export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # 1Password SSH Agent
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
