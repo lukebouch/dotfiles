@@ -108,10 +108,15 @@ source $ZSH/oh-my-zsh.sh
 alias la="ls -a"
 
 alias a="artisan"
+alias mf="artisan migrate:fresh"
+alias mfs="artisan migrate:fresh --seed"
+alias mfs="artisan migrate:fresh --seed --step"
+
 alias tinker="artisan tinker"
 alias serve="artisan serve"
 alias c="composer"
 alias vim="nvim"
+alias nah='git reset --hard;git clean -df'
 
 
 # 1Password SSH Agent
