@@ -107,6 +107,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias la="ls -a"
 
+alias notes="cd ~/notes"
+alias scripts="cd ~/scripts"
+alias dotfiles="cd ~/dotfiles"
+
 alias a="artisan"
 alias mf="artisan migrate:fresh"
 alias mfs="artisan migrate:fresh --seed"
