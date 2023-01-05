@@ -111,6 +111,7 @@ alias lash="ls -lash"
 alias notes="cd ~/notes"
 alias scripts="cd ~/scripts"
 alias dotfiles="cd ~/dotfiles"
+alias sites="cd ~/sites"
 
 alias a="artisan"
 alias mf="artisan migrate:fresh"
