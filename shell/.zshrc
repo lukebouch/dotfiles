@@ -125,7 +125,7 @@ alias vim="nvim"
 alias nah='git reset --hard;git clean -df'
 alias pull='git pull'
 alias commit='git commit'
-alias gsave='git pull && git add . && git commit && git push'
+alias gsave='git add . && git commit && git push'
 alias bump='git commit --allow-empty -m "bump" && git push'
 
 alias tower="gittower ."
