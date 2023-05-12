@@ -128,6 +128,8 @@ alias commit='git commit'
 alias gsave='git add . && git commit && git push'
 alias bump='git commit --allow-empty -m "bump" && git push'
 
+alias viewlog='tail -f -n 200 storage/logs/laravel*.log \'
+
 alias tower="gittower ."
 
 # 1Password SSH Agent
