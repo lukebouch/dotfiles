@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias la="ls -a"
 alias lash="ls -lash"
 
-alias notes="cd ~/notes"
+alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents"
 alias scripts="cd ~/scripts"
 alias dotfiles="cd ~/dotfiles"
 alias sites="cd ~/sites"
