@@ -112,6 +112,7 @@ alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Do
 alias scripts="cd ~/scripts"
 alias dotfiles="cd ~/dotfiles"
 alias sites="cd ~/sites"
+alias icloud="cd /Users/lukebouch/Library/Mobile Documents/com~apple~CloudDocs"
 
 alias a="artisan"
 alias mf="artisan migrate:fresh"
