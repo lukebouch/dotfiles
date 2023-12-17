@@ -108,8 +108,10 @@ source $ZSH/oh-my-zsh.sh
 alias la="ls -a"
 alias lash="ls -lash"
 
+scriptsLocation="~/scripts"
+
 alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents"
-alias scripts="cd ~/scripts"
+alias scripts="cd $scriptsLocation"
 alias dotfiles="cd ~/dotfiles"
 alias sites="cd ~/sites"
 alias icloud="cd /Users/lukebouch/Library/Mobile\ Documents/com~apple~CloudDocs"
@@ -132,6 +134,8 @@ alias bump='git commit --allow-empty -m "bump" && git push'
 alias viewlog='tail -f -n 200 storage/logs/laravel*.log \'
 
 alias tower="gittower ."
+
+alias backup="$scriptsLocation/backup.sh"
 
 # 1Password SSH Agent
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
