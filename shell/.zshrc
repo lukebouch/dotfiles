@@ -138,3 +138,6 @@ export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agen
 
 # Lua Interpreter
 export PATH=$PATH:/opt/homebrew/bin/lua:$PATH
+
+# Python Interpreter
+export PATH=$PATH:/opt/homebrew/bin/python3:$PATH
