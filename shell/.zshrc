@@ -137,8 +137,6 @@ alias viewlog='tail -f -n 200 storage/logs/laravel*.log \'
 
 alias tower="gittower ."
 
-alias backup="$scriptsLocation/backup.sh"
-
 # 1Password SSH Agent
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
@@ -147,3 +145,6 @@ export PATH=$PATH:/opt/homebrew/bin/lua:$PATH
 
 # Python Interpreter
 export PATH=$PATH:/opt/homebrew/bin/python3:$PATH
+
+# Scripts
+export PATH=$PATH:/Users/lukebouch/scripts:$PATH
