@@ -179,3 +179,10 @@ export NVM_DIR="/Users/lukebouch/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+
+rsync_url="de3105@de3105.rsync.net"
+bumble_bee_url="bumble-bee.lukebouch.com:/media/data/backups"
+
+printHeader () {
+    echo "---------- [ $1 ] ----------"
+}
