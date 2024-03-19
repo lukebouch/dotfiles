@@ -149,7 +149,7 @@ export PATH=$PATH:/opt/homebrew/bin/lua:$PATH
 export PATH=$PATH:/opt/homebrew/bin/python3:$PATH
 
 # Scripts
-export PATH=$PATH:/Users/lukebouch/scripts:$PATH
+export PATH=$PATH:/Users/lukebouch/scripts:/Users/lukebouch/scripts/backup:$PATH
 
 
 # Herd injected PHP binary.
