@@ -112,7 +112,7 @@ alias lash="ls -lash"
 
 scriptsLocation="~/scripts"
 
-alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
+alias notes="cd ~/notes"
 alias scripts="cd $scriptsLocation"
 alias dotfiles="cd ~/dotfiles"
 alias sites="cd ~/sites"
