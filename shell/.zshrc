@@ -115,7 +115,6 @@ scriptsLocation="~/scripts"
 alias notes="cd ~/notes"
 alias scripts="cd $scriptsLocation"
 alias dotfiles="cd ~/dotfiles"
-alias code="cd ~/code"
 alias sites="cd ~/code"
 alias icloud="cd /Users/lukebouch/Library/Mobile\ Documents/com~apple~CloudDocs"
 
