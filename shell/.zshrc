@@ -112,10 +112,10 @@ alias lash="ls -lash"
 
 scriptsLocation="~/scripts"
 
-alias notes="cd ~/notes"
+alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
 alias scripts="cd $scriptsLocation"
 alias dotfiles="cd ~/dotfiles"
-alias sites="cd ~/code"
+alias sites="cd ~/sites"
 alias icloud="cd /Users/lukebouch/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 alias a="artisan"
@@ -140,10 +140,51 @@ alias viewlog='tail -f -n 200 storage/logs/laravel*.log \'
 alias tower="gittower ."
 
 # Homebrew
-export PATH=$PATH:/opt/homebrew/bin:$PATH
+export PATH="/opt/homebrew/bin:$PATH"
 
 # 1Password SSH Agent
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
+# Lua Interpreter
+export PATH=$PATH:/opt/homebrew/bin/lua:$PATH
+
+# Python Interpreter
+export PATH=$PATH:/opt/homebrew/bin/python3:$PATH
+
 # Scripts
 export PATH=$PATH:/Users/lukebouch/scripts:/Users/lukebouch/scripts/backup:$PATH
+
+
+# Herd injected PHP binary.
+export PATH="/Users/lukebouch/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/82/"
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP 8.1 configuration.
+export HERD_PHP_81_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/81/"
+
+
+# Herd injected PHP 8.0 configuration.
+export HERD_PHP_80_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/80/"
+
+
+# Herd injected PHP 7.4 configuration.
+export HERD_PHP_74_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/74/"
+
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/lukebouch/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/84/"
