@@ -75,8 +75,6 @@ ZSH_THEME="lukerandall"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     zsh-autosuggestions
-    git
-    composer
     artisan
 )
 
