@@ -4,7 +4,7 @@ source ~/.env
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/lukebouch/.oh-my-zsh"
+export ZSH="/Users/lbouch/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -112,11 +112,11 @@ alias lash="ls -lash"
 
 scriptsLocation="~/scripts"
 
-alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
+alias notes="cd /Users/lbouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
 alias scripts="cd $scriptsLocation"
 alias dotfiles="cd ~/dotfiles"
 alias sites="cd ~/sites"
-alias icloud="cd /Users/lukebouch/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias icloud="cd /Users/lbouch/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 alias a="artisan"
 alias mf="artisan migrate:fresh"
@@ -152,29 +152,29 @@ export PATH=$PATH:/opt/homebrew/bin/lua:$PATH
 export PATH=$PATH:/opt/homebrew/bin/python3:$PATH
 
 # Scripts
-export PATH=$PATH:/Users/lukebouch/scripts:/Users/lukebouch/scripts/backup:$PATH
+export PATH=$PATH:/Users/lbouch/scripts:/Users/lbouch/scripts/backup:$PATH
 
 # Pandoc
 export PATH="/Library/TeX/texbin:$PATH"
 
 # Herd injected PHP binary.
-export PATH="/Users/lukebouch/Library/Application Support/Herd/bin/":$PATH
+export PATH="/Users/lbouch/Library/Application Support/Herd/bin/":$PATH
 # Herd injected PHP 8.2 configuration.
-export HERD_PHP_82_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/82/"
+export HERD_PHP_82_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/82/"
 # Herd injected PHP 8.3 configuration.
-export HERD_PHP_83_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/83/"
+export HERD_PHP_83_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/83/"
 # Herd injected PHP 8.1 configuration.
-export HERD_PHP_81_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/81/"
+export HERD_PHP_81_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/81/"
 # Herd injected PHP 8.0 configuration.
-export HERD_PHP_80_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/80/"
+export HERD_PHP_80_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/80/"
 # Herd injected PHP 7.4 configuration.
-export HERD_PHP_74_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/74/"
+export HERD_PHP_74_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/74/"
 # Herd injected NVM configuration
-export NVM_DIR="/Users/lukebouch/Library/Application Support/Herd/config/nvm"
+export NVM_DIR="/Users/lbouch/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
 # Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/84/"
 
 
 # Herd injected PHP 8.4 configuration.
