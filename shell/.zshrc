@@ -185,3 +185,7 @@ export PATH="/Users/lbouch/Library/Application Support/Herd/bin/":$PATH
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 alias s="sail"
 alias sa='sail artisan'
+
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/85/"
