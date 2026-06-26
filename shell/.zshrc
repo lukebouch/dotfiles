@@ -181,3 +181,7 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/
 
 # Herd injected PHP binary.
 export PATH="/Users/lbouch/Library/Application Support/Herd/bin/":$PATH
+
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias s="sail"
+alias sa='sail artisan'
