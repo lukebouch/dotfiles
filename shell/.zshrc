@@ -194,3 +194,4 @@ export HERD_PHP_85_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/
 export PATH="$PATH:/Users/lbouch/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="/Users/lbouch/.local/bin:$PATH"
