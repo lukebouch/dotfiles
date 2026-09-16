@@ -138,25 +138,20 @@ alias viewlog='tail -f -n 200 storage/logs/laravel*.log \'
 alias tower="gittower ."
 
 # Homebrew
-export PATH="/opt/homebrew/bin:$PATH"
+typeset -U path PATH
+path=(/opt/homebrew/bin $path)
 
 # 1Password SSH Agent
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
-# Lua Interpreter
-export PATH=$PATH:/opt/homebrew/bin/lua:$PATH
-
-# Python Interpreter
-export PATH=$PATH:/opt/homebrew/bin/python3:$PATH
-
 # Scripts
-export PATH=$PATH:/Users/lbouch/scripts:/Users/lbouch/scripts/backup:$PATH
+path+=(/Users/lbouch/scripts /Users/lbouch/scripts/backup)
 
 # Pandoc
-export PATH="/Library/TeX/texbin:$PATH"
+path=(/Library/TeX/texbin $path)
 
 # Herd injected PHP binary.
-export PATH="/Users/lbouch/Library/Application Support/Herd/bin/":$PATH
+path=("/Users/lbouch/Library/Application Support/Herd/bin" $path)
 # Herd injected PHP 8.2 configuration.
 export HERD_PHP_82_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/82/"
 # Herd injected PHP 8.3 configuration.
@@ -179,9 +174,6 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/
 export HERD_PHP_84_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/84/"
 
 
-# Herd injected PHP binary.
-export PATH="/Users/lbouch/Library/Application Support/Herd/bin/":$PATH
-
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 alias s="sail"
 alias sa='sail artisan'
@@ -191,7 +183,8 @@ alias sa='sail artisan'
 export HERD_PHP_85_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/85/"
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/lbouch/.lmstudio/bin"
+path+=(/Users/lbouch/.lmstudio/bin)
 # End of LM Studio CLI section
 
-export PATH="/Users/lbouch/.local/bin:$PATH"
+path=(/Users/lbouch/.local/bin $path)
+export PATH
