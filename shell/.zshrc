@@ -1,16 +1,16 @@
-source ~/.env
+[[ -f "$HOME/.env" ]] && source "$HOME/.env"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/lbouch/.oh-my-zsh"
+export ZSH="/Users/lukebouch/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="lukerandall"
+ZSH_THEME="lukerandall"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -114,11 +114,11 @@ alias lash="ls -lash"
 
 scriptsLocation="~/scripts"
 
-alias notes="cd /Users/lbouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
+alias notes="cd /Users/lukebouch/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
 alias scripts="cd $scriptsLocation"
 alias dotfiles="cd ~/dotfiles"
 alias sites="cd ~/sites"
-alias icloud="cd /Users/lbouch/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias icloud="cd /Users/lukebouch/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 alias a="artisan"
 alias mf="artisan migrate:fresh"
@@ -149,33 +149,33 @@ path=(/opt/homebrew/bin $path)
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 # Scripts
-path+=(/Users/lbouch/scripts /Users/lbouch/scripts/backup)
+path+=(/Users/lukebouch/scripts /Users/lukebouch/scripts/backup)
 
 # Pandoc
 path=(/Library/TeX/texbin $path)
 
 # Herd injected PHP binary.
-path=("/Users/lbouch/Library/Application Support/Herd/bin" $path)
+path=("/Users/lukebouch/Library/Application Support/Herd/bin" $path)
 # Herd injected PHP 8.2 configuration.
-export HERD_PHP_82_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/82/"
+export HERD_PHP_82_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/82/"
 # Herd injected PHP 8.3 configuration.
-export HERD_PHP_83_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/83/"
+export HERD_PHP_83_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/83/"
 # Herd injected PHP 8.1 configuration.
-export HERD_PHP_81_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/81/"
+export HERD_PHP_81_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/81/"
 # Herd injected PHP 8.0 configuration.
-export HERD_PHP_80_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/80/"
+export HERD_PHP_80_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/80/"
 # Herd injected PHP 7.4 configuration.
-export HERD_PHP_74_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/74/"
+export HERD_PHP_74_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/74/"
 # Herd injected NVM configuration
-export NVM_DIR="/Users/lbouch/Library/Application Support/Herd/config/nvm"
+export NVM_DIR="/Users/lukebouch/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
 # Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/84/"
 
 
 # Herd injected PHP 8.4 configuration.
-export HERD_PHP_84_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/84/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/84/"
 
 
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
@@ -184,11 +184,19 @@ alias sa='sail artisan'
 
 
 # Herd injected PHP 8.5 configuration.
-export HERD_PHP_85_INI_SCAN_DIR="/Users/lbouch/Library/Application Support/Herd/config/php/85/"
+export HERD_PHP_85_INI_SCAN_DIR="/Users/lukebouch/Library/Application Support/Herd/config/php/85/"
 
 # Added by LM Studio CLI (lms)
-path+=(/Users/lbouch/.lmstudio/bin)
+path+=(/Users/lukebouch/.lmstudio/bin)
 # End of LM Studio CLI section
 
-path=(/Users/lbouch/.local/bin $path)
+path=(/Users/lukebouch/.local/bin $path)
 export PATH
+
+# Local CLI additions preserved from the previous configuration
+
+# T3 Code CLI
+export PATH="/Users/lukebouch/.local/bin:$PATH"
+
+# Codex CLI
+export PATH="/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS:$PATH"
